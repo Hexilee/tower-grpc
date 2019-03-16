@@ -5,7 +5,12 @@ use syn::{AttributeArgs, ItemMod};
 
 #[derive(Debug, FromMeta)]
 struct MacroArgs {
-    path: String,
+    proto: String,
+    include: String,
+    #[darling(default)]
+    client: bool,
+    #[darling(default)]
+    server: bool,
 }
 
 pub fn implement(attr_args: AttributeArgs, input: ItemMod) -> TokenStream {

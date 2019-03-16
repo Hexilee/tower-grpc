@@ -2,5 +2,5 @@
 
 use tower_grpc_include::proto_include;
 
-#[proto_include(path = "./hello_world.proto")]
+#[proto_include(proto = "proto/hello_world.proto", include = "proto")]
 mod hello_world {}
