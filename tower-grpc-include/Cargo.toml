@@ -1,0 +1,15 @@
+[package]
+name = "tower-grpc-include"
+version = "0.1.0"
+authors = ["Hexilee <hexileee@gmail.com>"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "0.15"
+quote = "0.6"
+synstructure = "0.10"
+proc-macro2 = "0.4"
+darling = "0.8"
